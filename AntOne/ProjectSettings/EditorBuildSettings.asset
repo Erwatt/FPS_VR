@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR Bowling.unity
     guid: f614b448489040d4f92cb0e1f6325bb2
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: f631124fde04a394486f574fd51fc1a8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: de2d3eb5afee32949a056b82fe0e7df1, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 40575f2ab185a22449e9b1f2b7173f0c, type: 2}

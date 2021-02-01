@@ -12,6 +12,7 @@ language governing permissions and limitations under the license.
 using UnityEngine;
 using System.Collections;
 using System.Diagnostics;
+using Oculus.SampleFramework.Core.Locomotion.Scripts;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using UnityEngine.EventSystems;
