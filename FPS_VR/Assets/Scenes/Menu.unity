@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 1458269377}
   - component: {fileID: 1458269378}
   - component: {fileID: 1458269380}
+  - component: {fileID: 1458269381}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -1200,7 +1201,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 130cd327cb69f5c4ab2bcdb608fbd58c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1279,6 +1280,23 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1458269381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458269375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ebfbe08e4d80a49ba6873a0992ecec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 1458269380}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32
+  btn: {fileID: 0}
 --- !u!1 &1876928732
 GameObject:
   m_ObjectHideFlags: 0
