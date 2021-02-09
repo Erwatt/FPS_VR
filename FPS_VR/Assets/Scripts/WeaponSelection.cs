@@ -16,10 +16,13 @@ public class WeaponSelection : MonoBehaviour
         }
         else if (weaponChoice.name == "Katana")
         {
-            weapon=(GameObject) Instantiate(Resources.Load("Katana"));
+            weapon=(GameObject) Instantiate(Resources.Load("Katana"),
+                new Vector3(36.493f,8.878f,36.761f),
+                Quaternion.identity);
         }
         DontDestroyOnLoad(weapon);
-        SceneManager.LoadScene("Main Scene");
+        SceneManager.LoadScene("Moody Night");
+        
     }
     
 
