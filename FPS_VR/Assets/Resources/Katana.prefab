@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6826526902370641806}
   - component: {fileID: 6808797982987819422}
   - component: {fileID: 6808797982987819417}
+  - component: {fileID: 2472284369054070783}
   m_Layer: 0
   m_Name: Katana
   m_TagString: Untagged
@@ -414,6 +415,20 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!136 &2472284369054070783
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6807535906153499344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.11616853
+  m_Height: 1.3114643
+  m_Direction: 1
+  m_Center: {x: -0.0000000018626456, y: 0.54872936, z: -0.06171085}
 --- !u!1 &6808083184596450816
 GameObject:
   m_ObjectHideFlags: 0
