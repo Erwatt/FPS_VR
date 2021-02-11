@@ -9,6 +9,7 @@ public class WeaponInstance : MonoBehaviour
     
     void Awake()
     {
+        Debug.Log(WeaponSelection.weaponChoice);
         if (WeaponSelection.weaponChoice == "Gun")
         {
             weapon= (GameObject) Instantiate(Resources.Load("Gun"));
