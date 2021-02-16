@@ -6,10 +6,10 @@ public class WeaponInstance : MonoBehaviour
 {
 
     private GameObject weapon;
+    public static Vector3 posPlayer;
     
     void Awake()
     {
-        Debug.Log(WeaponSelection.weaponChoice);
         if (WeaponSelection.weaponChoice == "Gun")
         {
             weapon= (GameObject) Instantiate(Resources.Load("Gun"));
@@ -20,5 +20,8 @@ public class WeaponInstance : MonoBehaviour
                 new Vector3(36.493f,8.878f,36.761f),
                 Quaternion.identity);
         }
+
+        posPlayer = gameObject.transform.position;
+
     }
 }
