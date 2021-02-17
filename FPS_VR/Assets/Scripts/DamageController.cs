@@ -8,7 +8,7 @@ public class DamageController : MonoBehaviour
 {
     [SerializeField] private PlayerStat stat;
     [SerializeField] private ZombieStat zstat;
-    private float timer;
+    //private float timer;
 
     //[SerializeField] private int weaponDamage;
     // Start is called before the first frame update
@@ -28,14 +28,21 @@ public class DamageController : MonoBehaviour
         //const float damageDelay = 0f;
         //if (timer > damageDelay)
         //{
+        if (WeaponSelection.weaponChoice == "Gun")
+        {
+            zstat.zLife -= stat.gunDMG;
+        }
+        else if (WeaponSelection.weaponChoice == "Katana")
+        {
             zstat.zLife -= stat.swordDMG;
-            if (zstat.zLife <= 0)
-            {
-                Destroy(other.gameObject);
-                stat.killCount += 1;
-            }
+        }
+        if (zstat.zLife <= 0)
+        {
+            Destroy(other.gameObject);
+            stat.killCount += 1;
+        }
 
-            timer = 0;
+        //timer = 0;
         //}
 
         //timer += Time.deltaTime;
