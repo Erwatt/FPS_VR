@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,12 +10,15 @@ public class ZombieController : MonoBehaviour
 
     [SerializeField] private NavMeshAgent zombie;
     [SerializeField] private Animator animZombie;
+    [SerializeField] private ZombieStat zombieStat;
+    [SerializeField] private PlayerStat playerStat;
+
     private float timer;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        zombieStat.zLife = 100;
     }
 
     // Update is called once per frame
@@ -53,13 +57,12 @@ public class ZombieController : MonoBehaviour
      {
          const float attackDelay = 3f;
          
-         if (timer > attackDelay)
-         {
-             animZombie.SetBool("attack",true);
-             Debug.Log("player takes damage");
-             animZombie.SetBool("attack", false);
-             timer = 0f;
-         }
+        if (timer > attackDelay)
+        {
+            animZombie.SetBool("attack",true);
+            playerStat.Life -= zombieStat.zDamage;
+            timer = 0f;
+        }
 
          timer += Time.deltaTime;
          
