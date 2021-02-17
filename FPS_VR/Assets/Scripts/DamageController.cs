@@ -33,12 +33,13 @@ public class DamageController : MonoBehaviour
         //{
         if (WeaponSelection.weaponChoice == "Gun")
         {
-            zstat.zLife -= stat.gunDMG;
+            
+            other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.gunDMG;
             source.PlayOneShot(sliceClip);
         }
         else if (WeaponSelection.weaponChoice == "Katana")
         {
-            zstat.zLife -= stat.swordDMG;
+            other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.swordDMG;
             source.PlayOneShot(sliceClip);
         }
         if (zstat.zLife <= 0)

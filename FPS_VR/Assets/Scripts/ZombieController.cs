@@ -16,11 +16,13 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private Image zombieHealthBar;
 
     private float timer;
+
+    public float zombieLife;
     
     // Start is called before the first frame update
     void Start()
     {
-        zombieStat.zLife = 100;
+        zombieLife = zombieStat.zLife;
         zombieHealthBar.fillAmount = 1;
     }
 
@@ -49,14 +51,9 @@ public class ZombieController : MonoBehaviour
             attackController();
         }
 
-        zombieHealthBar.fillAmount = zombieStat.zLife / 100;
+        zombieHealthBar.fillAmount = zombieLife / 100;
     }
-
-    //private void OnTriggerEnter(Collider other)
-     //   {
-     //       Debug.Log("prout");
-            //Destroy(other.gameObject);
-     //   }
+    
 
      private void attackController()
      {
