@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a863d5c68c0e06b409ad7a8c192ce182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Foe: {fileID: 0}
+  stat: {fileID: 11400000, guid: 4fcd0b47c3700f940bc0a54929fc170a, type: 2}
+  zstat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
 --- !u!1 &6807535906153499344
 GameObject:
   m_ObjectHideFlags: 0
