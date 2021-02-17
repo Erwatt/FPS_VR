@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4ceaa0f6c7052eb439a2d44318d69044, type: 2}
 --- !u!1001 &64963384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,7 +981,7 @@ PrefabInstance:
       objectReference: {fileID: 5366108250150071029, guid: dcbe56f557e2df046ac5301b97075f53, type: 3}
     - target: {fileID: 3570920654661464352, guid: 24f306ae7834e564fb1a475250f50492, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3570920654661464352, guid: 24f306ae7834e564fb1a475250f50492, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 5366108250150071029, guid: dcbe56f557e2df046ac5301b97075f53, type: 3}
     - target: {fileID: 3570920654661464352, guid: 24f306ae7834e564fb1a475250f50492, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3570920654661464352, guid: 24f306ae7834e564fb1a475250f50492, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2559,7 +2559,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2844,7 +2844,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
