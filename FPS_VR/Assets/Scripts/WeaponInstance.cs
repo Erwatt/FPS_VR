@@ -12,7 +12,9 @@ public class WeaponInstance : MonoBehaviour
     {
         if (WeaponSelection.weaponChoice == "Gun")
         {
-            weapon= (GameObject) Instantiate(Resources.Load("Gun"));
+            weapon= (GameObject) Instantiate(Resources.Load("Gun"),
+                new Vector3(35.90586f,8.312f,37.76f),
+                Quaternion.identity);
         }
         else if (WeaponSelection.weaponChoice == "Katana")
         {
