@@ -15,7 +15,9 @@ public class SpawnController : MonoBehaviour
     void Start()
     {
         posSpawner = transform.position;
-        
+        Instantiate(Resources.Load("Zombie"),
+            posSpawner,
+            Quaternion.identity).name="Zombie";
     }
 
     // Update is called once per frame
