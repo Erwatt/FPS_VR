@@ -311,17 +311,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &308714146
+--- !u!1001 &311096979
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1250877084}
     - target: {fileID: 3489673472064764296, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_Name
       value: Gun
@@ -332,15 +328,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: -2.8137453
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7368375
+      value: 6.072
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -384,7 +380,7 @@ GameObject:
   - component: {fileID: 313909066}
   - component: {fileID: 313909063}
   - component: {fileID: 313909064}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +432,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -938,7 +934,7 @@ GameObject:
   - component: {fileID: 1328176827}
   - component: {fileID: 1328176824}
   - component: {fileID: 1328176825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +986,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
