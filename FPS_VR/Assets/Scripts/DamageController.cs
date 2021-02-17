@@ -8,6 +8,10 @@ public class DamageController : MonoBehaviour
 {
     [SerializeField] private PlayerStat stat;
     [SerializeField] private ZombieStat zstat;
+    [SerializeField] private AudioSource sliceSource;
+    [SerializeField] private AudioClip sliceClip;
+    [SerializeField] private AudioSource deathSource;
+    [SerializeField] private AudioClip deathClip;
     //private float timer;
 
     //[SerializeField] private int weaponDamage;
@@ -35,10 +39,12 @@ public class DamageController : MonoBehaviour
         else if (WeaponSelection.weaponChoice == "Katana")
         {
             zstat.zLife -= stat.swordDMG;
+            sliceSource.PlayOneShot(sliceClip);
         }
         if (zstat.zLife <= 0)
         {
             Destroy(other.gameObject);
+            deathSource.PlayOneShot(deathClip);
             stat.killCount += 1;
         }
 

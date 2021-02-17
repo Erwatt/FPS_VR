@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5373f8111f204b80b357eb2ff60cc7e2, type: 3}
   m_Name: PlayerStat
   m_EditorClassIdentifier: 
-  playerLife: 100
+  playerLife: 30
   gunDamage: 30
-  swordDamage: 50
+  swordDamage: 1
