@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
@@ -25,6 +26,10 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         killCounting.text = "Kill count :" + stat.killCount;
-        showedHealth.fillAmount = stat.Life / 100;  
+        showedHealth.fillAmount = stat.Life / 100;
+        if (stat.Life <= 0)
+        {
+            SceneManager.LoadScene("DeathScene");
+        }
     }
 }
