@@ -17,9 +17,11 @@ public class SimpleShoot : MonoBehaviour
 
     [Header("Settings")]
     [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
-    [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
-    [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
+    [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 100f;
+    [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 100f;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     void Start()
     {
@@ -29,18 +31,11 @@ public class SimpleShoot : MonoBehaviour
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
     }
-
-    void Update()
+    
+    public void Fire()
     {
-        //If you want a different input, change it here
-        if (Input.GetButtonDown("Fire1"))
-        {
-            //Calls animation on the gun that has the relevant animation events that will fire
-            gunAnimator.SetTrigger("Fire");
-        }
+        gunAnimator.SetTrigger("Fire");
     }
-
-
     //This function creates the bullet behavior
     void Shoot()
     {
@@ -49,7 +44,7 @@ public class SimpleShoot : MonoBehaviour
             //Create the muzzle flash
             GameObject tempFlash;
             tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
-
+            audioSource.PlayOneShot(audioClip);
             //Destroy the muzzle flash effect
             Destroy(tempFlash, destroyTimer);
         }

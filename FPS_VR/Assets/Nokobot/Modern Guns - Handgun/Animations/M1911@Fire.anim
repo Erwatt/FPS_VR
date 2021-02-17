@@ -684,14 +684,14 @@ AnimationClip:
   - time: 0.11666667
     functionName: Shoot
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 1122964723992546, guid: 674adf642abf5614aae2995443c8250f, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.18333334
     functionName: CasingRelease
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 4362657251999731927, guid: 4cb20e8abae957146a8b78e670d3fe74, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
