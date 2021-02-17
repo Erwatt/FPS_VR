@@ -31,6 +31,8 @@ public class SimpleShoot : MonoBehaviour
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
     }
+
+   
     
     public void Fire()
     {
@@ -54,8 +56,9 @@ public class SimpleShoot : MonoBehaviour
         { return; }
 
         // Create a bullet and add force on it in direction of the barrel
-        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-
+        GameObject spawnedBullet= (GameObject)Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation);
+        spawnedBullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+        Destroy(spawnedBullet,3);
     }
 
     //This function creates a casing at the ejection slot
