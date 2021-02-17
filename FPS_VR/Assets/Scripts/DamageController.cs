@@ -42,7 +42,7 @@ public class DamageController : MonoBehaviour
             other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.swordDMG;
             source.PlayOneShot(sliceClip);
         }
-        if (zstat.zLife <= 0)
+        if (other.gameObject.GetComponent<ZombieController>().zombieLife <= 0)
         {
             Destroy(other.gameObject);
             source.PlayOneShot(deathClip);
