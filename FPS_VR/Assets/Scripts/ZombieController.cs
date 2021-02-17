@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class ZombieController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private Animator animZombie;
     [SerializeField] private ZombieStat zombieStat;
     [SerializeField] private PlayerStat playerStat;
+    [SerializeField] private Image zombieHealthBar;
 
     private float timer;
     
@@ -19,6 +21,7 @@ public class ZombieController : MonoBehaviour
     void Start()
     {
         zombieStat.zLife = 100;
+        zombieHealthBar.fillAmount = 1;
     }
 
     // Update is called once per frame
@@ -45,6 +48,8 @@ public class ZombieController : MonoBehaviour
         {
             attackController();
         }
+
+        zombieHealthBar.fillAmount = zombieStat.zLife / 100;
     }
 
     //private void OnTriggerEnter(Collider other)
@@ -64,7 +69,7 @@ public class ZombieController : MonoBehaviour
             timer = 0f;
         }
 
-         timer += Time.deltaTime;
+        timer += Time.deltaTime;
          
      }
 }

@@ -133,6 +133,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stat: {fileID: 11400000, guid: 4fcd0b47c3700f940bc0a54929fc170a, type: 2}
   zstat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
+  sliceSource: {fileID: 6808797982987819422}
+  sliceClip: {fileID: 8300000, guid: e9a581dae25e74e4684a192b2353608c, type: 3}
+  deathSource: {fileID: 6808797982987819422}
+  deathClip: {fileID: 8300000, guid: ea409bca03a3d504ab21cef5ca67942c, type: 3}
 --- !u!1 &6807535906153499344
 GameObject:
   m_ObjectHideFlags: 0
