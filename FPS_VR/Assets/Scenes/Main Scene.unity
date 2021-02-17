@@ -311,17 +311,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &308714146
+--- !u!1001 &311096979
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1250877084}
     - target: {fileID: 3489673472064764296, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_Name
       value: Gun
@@ -332,15 +328,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: -2.8137453
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7368375
+      value: 6.072
       objectReference: {fileID: 0}
     - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -883,102 +879,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1197843400
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1197843401}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Gun, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 426520965, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3489673472064764296, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_Name
-      value: Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3493275574959595518, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
---- !u!114 &1197843401 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 426520969, guid: a3341e3556f4499438198fbe1a894edb, type: 3}
-  m_PrefabInstance: {fileID: 1197843400}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500c5537fcb5ddf44b0df53738ea8189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1250877083
 GameObject:
   m_ObjectHideFlags: 0
