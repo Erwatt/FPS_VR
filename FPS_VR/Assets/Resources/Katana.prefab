@@ -135,7 +135,7 @@ MonoBehaviour:
   zstat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
   sliceClip: {fileID: 8300000, guid: e9a581dae25e74e4684a192b2353608c, type: 3}
   source: {fileID: 6808797982987819422}
-  deathClip: {fileID: 8300000, guid: ea409bca03a3d504ab21cef5ca67942c, type: 3}
+  deathClip: {fileID: 8300000, guid: 0b875e650a95061489ed76e880112f2e, type: 3}
 --- !u!1 &6807535906153499344
 GameObject:
   m_ObjectHideFlags: 0

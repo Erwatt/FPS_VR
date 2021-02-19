@@ -14,6 +14,8 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private ZombieStat zombieStat;
     [SerializeField] private PlayerStat playerStat;
     [SerializeField] private Image zombieHealthBar;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip hurtClip;
 
     private float timer;
 
@@ -63,9 +65,9 @@ public class ZombieController : MonoBehaviour
         {
             animZombie.SetBool("attack",true);
             playerStat.Life -= zombieStat.zDamage;
+            source.PlayOneShot(hurtClip);
             timer = 0f;
         }
-
         timer += Time.deltaTime;
          
      }

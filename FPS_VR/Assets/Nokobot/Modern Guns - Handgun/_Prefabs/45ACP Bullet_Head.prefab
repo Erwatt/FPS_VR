@@ -81,23 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8730291714504395938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6804990658058999119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a863d5c68c0e06b409ad7a8c192ce182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stat: {fileID: 11400000, guid: 4fcd0b47c3700f940bc0a54929fc170a, type: 2}
-  zstat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
-  sliceClip: {fileID: 8300000, guid: aba95a24487f9b54683217fa46fa9177, type: 3}
-  source: {fileID: 4421631863916206588}
-  deathClip: {fileID: 8300000, guid: ea409bca03a3d504ab21cef5ca67942c, type: 3}
 --- !u!82 &4421631863916206588
 AudioSource:
   m_ObjectHideFlags: 0
@@ -194,6 +177,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8730291714504395938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804990658058999119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a863d5c68c0e06b409ad7a8c192ce182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stat: {fileID: 11400000, guid: 4fcd0b47c3700f940bc0a54929fc170a, type: 2}
+  zstat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
+  sliceClip: {fileID: 8300000, guid: aba95a24487f9b54683217fa46fa9177, type: 3}
+  source: {fileID: 4421631863916206588}
+  deathClip: {fileID: 8300000, guid: 0b875e650a95061489ed76e880112f2e, type: 3}
 --- !u!1001 &7799836738284049863
 PrefabInstance:
   m_ObjectHideFlags: 0
