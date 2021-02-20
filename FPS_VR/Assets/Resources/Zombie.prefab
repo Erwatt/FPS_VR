@@ -372,6 +372,9 @@ MonoBehaviour:
   zombieStat: {fileID: 11400000, guid: c912bd868dfc51b4f823ad88213d4d41, type: 2}
   playerStat: {fileID: 11400000, guid: 4fcd0b47c3700f940bc0a54929fc170a, type: 2}
   zombieHealthBar: {fileID: 6664910411039534730}
+  source: {fileID: 8833122540883491626}
+  hurtClip: {fileID: 8300000, guid: df213e9ad722ab8459d0bdfa6b17c997, type: 3}
+  zombieLife: 0
 --- !u!195 &1401459925
 NavMeshAgent:
   m_ObjectHideFlags: 0
