@@ -130,10 +130,12 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 67bbc5c0044c2054a930531f37fb0803, type: 2}
+  - {fileID: 0}
   - {fileID: -1968757534503079732, guid: 1ebb15de988b4ba4f88db2ac1380b42e, type: 2}
-  - {fileID: -86430424984447011, guid: 4aed2dac13195904094cbcb92d42c364, type: 2}
+  - {fileID: 11400000, guid: 67bbc5c0044c2054a930531f37fb0803, type: 2}
+  - {fileID: 8158444226328637238, guid: 4aed2dac13195904094cbcb92d42c364, type: 2}
   - {fileID: 11400000, guid: c29a37bd71aa9234389ff1f077f6bf01, type: 2}
+  - {fileID: 1374383461014682532, guid: d228c20d8fe11e84595f1cfc3689210c, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -150,14 +152,15 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.FPS_VR
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 19
+  AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
