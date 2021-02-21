@@ -7,7 +7,7 @@ Pointez vers l'arme souhaitée (le bouton) et appuyer sur la gachette pour valid
 
 Vous serez amené dans une autre scène, vous apparaîtrez en haut d'une petite colline, où 5 spawners de zombie vous attendent dans les alentours.
 
-L'arme choisie doit apparaître devant vous, saisissez la en approchain votre main et en appuyant sur la gachette.
+L'arme choisie doit apparaître devant vous, saisissez la en approchant votre main et en appuyant sur la gachette.
 
 Attention, les zombies arrivent dès le lancement de la scène, dépêchez-vous donc de saisir votre amre pour vous défendre ! Vous pouvez voir votre vie et le nombre de zombies que vous avez tués.
 
