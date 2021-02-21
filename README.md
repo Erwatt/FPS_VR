@@ -9,6 +9,6 @@ Vous serez amené dans une autre scène, vous apparaîtrez en haut d'une petite 
 
 L'arme choisie doit apparaître devant vous, saisissez la en approchant votre main et en appuyant sur la gachette.
 
-Attention, les zombies arrivent dès le lancement de la scène, dépêchez-vous donc de saisir votre amre pour vous défendre ! Vous pouvez voir votre vie et le nombre de zombies que vous avez tués.
+Attention, les zombies arrivent dès le lancement de la scène, dépêchez-vous donc de saisir votre arme pour vous défendre ! Vous pouvez voir votre vie et le nombre de zombies que vous avez tués.
 
 Lorsque vous êtes mort, vous êtes redirigé vers le menu de sélection d'arme.
