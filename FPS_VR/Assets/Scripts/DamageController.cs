@@ -28,30 +28,26 @@ public class DamageController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //const float damageDelay = 0f;
-        //if (timer > damageDelay)
-        //{
-        if (WeaponSelection.weaponChoice == "Gun")
+        if (other.name == "Zombie")
         {
-            
-            other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.gunDMG;
-            source.PlayOneShot(sliceClip);
-        }
-        else if (WeaponSelection.weaponChoice == "Katana")
-        {
-            other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.swordDMG;
-            source.PlayOneShot(sliceClip);
-        }
-        if (other.gameObject.GetComponent<ZombieController>().zombieLife <= 0)
-        {
-            Destroy(other.gameObject);
-            source.PlayOneShot(deathClip);
-            stat.killCount += 1;
-        }
+            if (WeaponSelection.weaponChoice == "Gun")
+            {
 
-        //timer = 0;
-        //}
+                other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.gunDMG;
+                source.PlayOneShot(sliceClip);
+            }
+            else if (WeaponSelection.weaponChoice == "Katana")
+            {
+                other.gameObject.GetComponent<ZombieController>().zombieLife -= stat.swordDMG;
+                source.PlayOneShot(sliceClip);
+            }
 
-        //timer += Time.deltaTime;
+            if (other.gameObject.GetComponent<ZombieController>().zombieLife <= 0)
+            {
+                Destroy(other.gameObject);
+                source.PlayOneShot(deathClip);
+                stat.killCount += 1;
+            }
+        }
     }
 }
